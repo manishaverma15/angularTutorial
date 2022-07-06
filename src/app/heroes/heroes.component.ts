@@ -8,7 +8,6 @@ import { MessageService } from '../message.service';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-
   heroes: Hero[] = [];
   selectedHero?: Hero;
   // here ? is used because selectedHero is optional.
