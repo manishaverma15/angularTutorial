@@ -8,7 +8,7 @@ import { HEROES } from './mock-heros';
   providedIn: 'root'
 })
 export class UserService {
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   logIn(email: string, password: string): boolean {
     const user: Hero | undefined = HEROES.find(user => email === user.email && password === user.password);
