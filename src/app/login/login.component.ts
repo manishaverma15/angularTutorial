@@ -12,7 +12,7 @@ import { MessageService } from '../message.service';
 export class LoginComponent implements OnInit {
   email: string = '';
   password: string = '';
-  errorMessage: string = 'Before LogIn you firstly you have to Regiater';
+  errorMessage: string = 'Log in credentials are wrong, Please check!';
 
   constructor(private userService: UserService, private route: Router, private messageService: MessageService) { }
 
@@ -26,6 +26,5 @@ export class LoginComponent implements OnInit {
     else {
       this.messageService.add(this.errorMessage);
     }
-
   }
 }
