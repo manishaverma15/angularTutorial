@@ -1,4 +1,30 @@
-<h2>Log In Form</h2>
+<div class="example-card">
+    <mat-card >
+        <mat-card-header >
+            <mat-card-title>Log in form</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form>
+                <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="email">
+                </mat-form-field>
+                </p>
+                <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="password">
+                </mat-form-field>
+                </p>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+
+
+<!-- <h2>Log In Form</h2>
 <div>
 <div>
     <label>Email:</label>
@@ -9,9 +35,9 @@
     <input id="password" type="password" [(ngModel)]="password">
     </div>
 <div>
-    <button type="button" (click)="onSubmit()">Log In</button>
+    <button type="button" (click)="onSubmit()"  mat-raised-button color="primary">Log In</button>
 </div>
 <div>
     <button type="button" [routerLink]="['/register']">Register</button>
 </div>
-</div>
+</div> -->
