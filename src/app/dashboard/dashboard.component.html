@@ -1,6 +1,14 @@
+<h1>{{title}}</h1>
+<nav>
+    <a routerLink="/dashboard">Dashboard</a><br>
+    <a routerLink="/dashboard/heroes">Heroes</a>
+</nav>
+
 <h2>Top Heroes</h2>
 <div class="heroes-menu">
-    <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+    <a *ngFor="let hero of heroes" routerLink="/dashboard/detail/{{hero.id}}">
         {{hero.name}}
     </a>
 </div>
+
+<router-outlet></router-outlet>

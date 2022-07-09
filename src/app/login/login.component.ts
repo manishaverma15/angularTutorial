@@ -20,7 +20,9 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.userService.logIn(this.email, this.password)) {
+    const response: boolean = this.userService.logIn(this.email, this.password);
+    if (response) {
+      this.messageService.clear();
       this.route.navigate(['/dashboard']);
     }
     else {
