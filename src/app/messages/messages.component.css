@@ -18,3 +18,8 @@ h2 {
     color: white;
     background-color: #42545C;
 }
+
+.messages-container {
+    justify-content: center;
+    margin-left: 40%;
+}

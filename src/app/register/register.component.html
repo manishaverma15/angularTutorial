@@ -1,4 +1,53 @@
-<h2>Registration Form</h2>
+<div class="example-card">
+    <mat-card>
+        <mat-card-header >
+            <mat-card-title >Registration form</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form>
+                <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="name" type="text" name="name" [(ngModel)]="name" >
+                </mat-form-field>
+                </p>
+                <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="email" type="text" name="email" [(ngModel)]="email">
+                </mat-form-field>
+                </p>
+                <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="password" type="password" name="password" [(ngModel)]="password">
+                </mat-form-field>
+                </p>
+                <button type="button" mat-raised-button color="primary" class="backToLogin" (click)="onSubmitRegisteration()">Register</button>
+                <button type="button" mat-raised-button color="primary" [routerLink]="['/login']" class="backToLogin">Back to Login</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>Registration Form</h2>
 <div>
 <div>
     <label>Name:</label>
@@ -22,4 +71,4 @@
 <div>
     <button type="button" [routerLink]="['/login']">Back to Login</button>
 </div>
-</div>
+</div> -->

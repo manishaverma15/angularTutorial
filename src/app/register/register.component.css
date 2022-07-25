@@ -1,0 +1,13 @@
+.example-card { 
+    display: flex;
+    justify-content: center;
+    margin: 200px 0px 100px 0px;
+  }
+
+  .backToLogin {
+    margin-left: 40px;
+  }
+ 
+  mat-card-title {
+    color: pink;
+  }

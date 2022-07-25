@@ -7,3 +7,4 @@ export const HEROES: Hero[] = [
     // { id: 5, name: 'hey2' },
     // { id: 6, name: 'hi123' }
 ];
+
